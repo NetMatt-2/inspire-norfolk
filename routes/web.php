@@ -29,6 +29,7 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-Auth::routes();
+Route::post('contact/submit', 'ContactController@submit')->name('contact-form-submit');
+
 
 Route::get('/home', 'HomeController@index')->name('home');
