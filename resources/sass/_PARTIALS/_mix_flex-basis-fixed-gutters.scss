@@ -1,0 +1,8 @@
+// Set the flex-basis of a row of items with a fixed gutter size in-between.
+// Flex-container should have the property justify-content:space-between;
+
+@mixin flex-basis-fixed-gutters ($panels, $gutter) {
+    flex-basis: calc( (100% - (#{$gutter} * ( #{$panels} - 1 )) ) / #{$panels} );
+}
+
+// Advise you don't start deleting spaces; the operators don't like that. 
