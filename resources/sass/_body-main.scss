@@ -25,26 +25,28 @@
     color:white;
 }
 
-
-
 //OUR SERVICES
-.our-services .flex-container {
-    .card {
-        @include flex-basis-fixed-gutters (3, 20px);
+.card {
+    @include flex-basis-fixed-gutters (3, 20px);
+    text-align:center;
+    .text-container {
+        padding-top: 40px;
+        padding-bottom: 20px;
+        position: relative;
     }
 }
 .card-banner {
     height:200px;
     object-fit: cover;
 }
-.card {
-    text-align:center;
-}
 .icon {
     position: absolute;
-    color: black;       //<== alt text;
-    top:50%;
+    top:00%;
     left:50%;
+    transform:translate(-50%,-50%);       //<== Req'd to effectively set the image origin to center; translate moves the image by a distance relative to its width/height.
+    background-color: $fetching-shade-of-purple;
+    fill: $white;
+    color: black;                       //<== alt text;
     border-radius: 50%;
     width: 50px;
     height: 50px;

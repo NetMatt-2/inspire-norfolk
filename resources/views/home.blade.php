@@ -38,30 +38,30 @@
         <div class=flex-container>
             <!--Apprenticeship Recruitment card-->
             <div class=card>
-                <img src=# class=card-banner alt="People doing stuff">
+                <img src="images\card placeholders/gratisography-346H.jpg" class=card-banner alt="People doing stuff">
                 <div class=text-container>
                     <h2>Apprenticeship Recruitment</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                    <img src="https://img.icons8.com/ios/100/000000/handshake.png" class=icon alt="Shaking hands icon">
                 </div>
-                <img src=# class=icon alt="Shaking hands icon">
             </div>
             <!--International Work Placements card-->
             <div class=card>
-                <img src=# class=card-banner alt="Man with globe">
+                <img src="images\card placeholders/not-such-a-long-name.jpg" class=card-banner alt="Man with globe">
                 <div class=text-container>
                     <h2>International Work Placements</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                    <img src="https://img.icons8.com/android/96/000000/globe.png" class=icon alt="Globe icon">
                 </div>
-                <img src=# class=icon alt="Globe icon">
             </div>
             <!--Bespoke Apprenticeship Support-->
             <div class=card>
-                <img src=# class=card-banner alt="People shaking hands">
+                <img src="images\card placeholders/gratisography-188H.jpg" class=card-banner alt="People shaking hands">
                 <div class=text-container>
                     <h2>Bespoke Apprenticeship Support</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                    <img src="https://img.icons8.com/ios-glyphs/90/000000/group.png" class=icon alt="People icon">
                 </div>
-                <img src=# class=icon alt="People icon">
             </div>
         </div> 
     </section>
