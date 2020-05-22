@@ -1,8 +1,13 @@
 @import "_PARTIALS/colours",
-        "_PARTIALS/mix_flex-basis-fixed-gutters";
+        "_PARTIALS/mix_flex-basis-fixed-gutters",
+        "_PARTIALS/padding";
 
-//IN this, the _header_footer, and _banner.scss, I've used a general margin/padding of 9% to all of the body text. That looks right according to the template.
+//GENERAL
 
+/*main section {
+    width:100%;
+    padding: 0 $margin_outer;
+}*/
 
 //ABOUT
 .about {
@@ -16,22 +21,24 @@
 }
 
 .about, .our-services {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: $v-pad_lots;
+    padding-bottom: $v-pad_lots;
 }
-
 .our-services, .get-in-touch {
     background-color: $fetching-shade-of-purple;
     color:white;
 }
 
 //OUR SERVICES
+.our-services h2 {
+    text-transform: uppercase;
+}
 .card {
-    @include flex-basis-fixed-gutters (3, 20px);
+    @include flex-basis-fixed-gutters (3, $v-pad_little);
     text-align:center;
     .text-container {
-        padding-top: 40px;
-        padding-bottom: 20px;
+        padding-top: $v-pad_lots;
+        padding-bottom: $v-pad_some;
         position: relative;
     }
 }
@@ -41,7 +48,7 @@
 }
 .icon {
     position: absolute;
-    top:00%;
+    top:0%;
     left:50%;
     transform:translate(-50%,-50%);       //<== Req'd to effectively set the image origin to center; translate moves the image by a distance relative to its width/height.
     background-color: $fetching-shade-of-purple;
@@ -50,4 +57,25 @@
     border-radius: 50%;
     width: 50px;
     height: 50px;
+}
+
+//GET IN TOUCH
+.get-in-touch {
+    display:flex;
+    justify-content: space-between;
+    padding-top: $v-pad_some;
+    padding-bottom: $v-pad_some;
+    p {
+        flex-basis: 66%;
+    }
+    a {
+        flex-basis: calc(33% - #{$v-pad_little});
+        background-color: white;
+        color: $fetching-shade-of-purple;
+        border-radius: 8px;
+        text-align: center;
+        font-size: larger;
+        font-weight: 400;
+    }
+    // ^^^ This section went through an unreasonable ammount of jank before I finally got it lined up properly.
 }
