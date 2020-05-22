@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h1>contact</h1>
+<h1>contact1</h1>
 
 @if ($errors->any())
         <div class="alert alert-danger">
