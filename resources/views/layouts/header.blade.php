@@ -1,7 +1,7 @@
 <Header>
         <div class=flex-container>
             <div class=logo>
-                    <img src="IMGs/placeholder-logo.jpg" alt="An INSPIRING logo">
+                    <img src="images\placeholder-logo.jpg" alt="An INSPIRING logo">
             </div>
             <div class=nav-header>
                 <a>About Us</a>
