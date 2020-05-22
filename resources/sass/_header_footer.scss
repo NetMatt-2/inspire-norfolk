@@ -1,5 +1,5 @@
 @import "_PARTIALS/colours",
-        "_PARTIALS/mix_flex-basis-fixed-space-between";
+        "_PARTIALS/mix_flex-basis-fixed-gutters";
   
 //I cheated. Of course, I would've sampled the color from the template, but they sent us a .jpg not a .png, so the color information was lost.
 //So I grabbed the color from the current website instead ^^
@@ -15,7 +15,7 @@ header.flex-container {
 }
 footer .flex-container {
     section { 
-        @include flex-basis-fixed-space-between (3, 40px);
+        @include flex-basis-fixed-gutters (3, 40px);
     }
 }
 
@@ -36,7 +36,7 @@ footer .flex-container {
     display:flex;
     justify-content:space-between;
     > a {
-        @include flex-basis-fixed-space-between (5, 20px);
+        @include flex-basis-fixed-gutters (5, 20px);
         height:fit-content;
     }
     .quick-call {

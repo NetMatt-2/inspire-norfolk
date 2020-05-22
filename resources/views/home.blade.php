@@ -37,7 +37,7 @@
         <div class=flex-container>
             <!--Apprenticeship Recruitment card-->
             <div class=card>
-                <img src=# alt="People doing stuff">
+                <img src=# class=card-banner alt="People doing stuff">
                 <div class=text-container>
                     <h2>Apprenticeship Recruitment</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
@@ -46,7 +46,7 @@
             </div>
             <!--International Work Placements card-->
             <div class=card>
-                <img src=# alt="Man with globe">
+                <img src=# class=card-banner alt="Man with globe">
                 <div class=text-container>
                     <h2>International Work Placements</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
@@ -55,7 +55,7 @@
             </div>
             <!--Bespoke Apprenticeship Support-->
             <div class=card>
-                <img src=# alt="People shaking hands">
+                <img src=# class=card-banner alt="People shaking hands">
                 <div class=text-container>
                     <h2>Bespoke Apprenticeship Support</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
@@ -67,7 +67,7 @@
 
     <section class=about>
         <h2>Working in a partnership with Norfolk County Council since 2002</h2>
-        <p>We support international students coming to Norwich on work placements. These placements are with a variety of local companies across a range of sectors including retain, business, the trades, and architectural services. Each year this project grows and will in the fuure include our young people going out to France and Norway, so watch this space.</p>
+        <p>We support international students coming to Norwich on work placements. These placements are with a variety of local companies across a range of sectors including retain, business, the trades, and architectural services. Each year this project grows and will in the future include our young people going out to France and Norway, so watch this space.</p>
     </section>
 
     <section class=get-in-touch>

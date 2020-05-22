@@ -1,0 +1,49 @@
+@import "_PARTIALS/colours",
+        "_PARTIALS/mix_flex-basis-fixed-gutters";
+
+//IN this, the _header_footer, and _banner.scss, I've used a general margin/padding of 9% to all of the body text. That looks right according to the template.
+
+main section {
+    //I'm not sure how to make the bg stretch across the page with out just making the width 100% so here goes:
+    width:100%;
+    padding: 0 9%;
+}
+
+//ABOUT
+.about {
+    text-align: center;
+}
+.about h2, .text-container h2{
+    color: $fetching-shade-of-purple;
+}
+.about p, .text-container p{
+    color: black;
+}
+
+
+.our-services, .get-in-touch {
+    background-color: $fetching-shade-of-purple;
+    color:white;
+}
+
+//OUR SERVICES
+.our-services .flex-container {
+    .card {
+        @include flex-basis-fixed-gutters (3, 20px);
+    }
+}
+.card-banner {
+    height:200px;
+    object-fit: cover;
+}
+.card {
+    text-align:center;
+}
+.icon {
+    position: absolute;
+    top:50%;
+    left:50%;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
