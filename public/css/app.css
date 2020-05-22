@@ -10933,7 +10933,117 @@ a.text-dark:focus {
   }
 }
 
-h1 {
-  color: red;
+.flex-container {
+  display: flex;
+  margin: 0 9%;
+  justify-content: space-between;
 }
+
+header.flex-container {
+  height: 50px;
+}
+
+footer .flex-container section {
+  flex-basis: calc( (100% - (40px * ( 3 - 1 )) ) / 3 );
+}
+
+.logo {
+  flex-basis: 25%;
+  text-align: left;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.logo img {
+  display: inline-block;
+  height: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.nav-header {
+  flex-basis: 75%;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-header > a {
+  flex-basis: calc( (100% - (20px * ( 5 - 1 )) ) / 5 );
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.nav-header .quick-call {
+  color: white;
+  background-color: #584096;
+  border-radius: 4px;
+}
+
+.copyright {
+  background-color: #584096;
+  color: white;
+}
+
+.splash-banner {
+  background-image: url(/images/gratisography-398H.jpg?b8e7ec3ac7d1b8f5afb40144ecbd732a);
+  background-origin: initial;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-block {
+  margin: 0px;
+  width: 100%;
+  padding: 7.5% 25% 7.5% 9%;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 20px;
+  background-image: url(/images/banner-overlay.svg?4b1b530dcb1c58bb362e0449836b1eb4);
+  background-origin: content-box;
+  background-position: right 50%;
+  background-repeat: no-repeat;
+  /*Okay, so we set the width to 100% and pad the container on the right-hand side
+  This pushes the overlay in, but we want extra padding on the text.
+  BUT we don't want the text elements to have 50% padding because the effect will be cumulative;
+  we want 33% on the text elements (but my brain's turned off so I don't know why).
+      Because it's padded by 25%, so 75% remains, so 33% of 75% is 25% which brings the total padding to 50%.
+  */
+}
+
+.text-block h2,
+.text-block h3,
+.text-block h4,
+.text-block p {
+  color: white;
+}
+
+.text-block h2,
+.text-block h3,
+.text-block h4 {
+  text-transform: uppercase;
+}
+
+.text-block h2 {
+  margin-top: 0;
+}
+
+.text-block a {
+  border: 1.5px solid white;
+  border-radius: 6px;
+  text-align: center;
+  padding: 10px 40px;
+  margin-top: 0px;
+  display: inline-block;
+}
+
+/*@media (min-width:$bp-sm) {
+    .text-block {
+        width:50%;
+        padding-right:0%; 
+    }
+}*/
 

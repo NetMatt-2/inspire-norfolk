@@ -8,4 +8,6 @@
 @import '~bootstrap/scss/bootstrap';
 
 // Styles
-@import 'style';
+@import "header_footer", 
+        "body-main",
+        "banner";

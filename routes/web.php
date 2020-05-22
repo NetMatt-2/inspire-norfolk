@@ -27,9 +27,10 @@ Route::get('/testimonials', function () {
 
 Route::get('/contact', function () {
     return view('contact');
-});
+})->name('contact');
 
 Route::post('contact/submit', 'ContactController@submit')->name('contact-form-submit');
 
 
 Route::get('/home', 'HomeController@index')->name('home');
+

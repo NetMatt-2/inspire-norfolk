@@ -1,0 +1,56 @@
+@import "_PARTIALS/colours",
+        "_PARTIALS/mix_flex-basis-fixed-gutters";
+  
+//I cheated. Of course, I would've sampled the color from the template, but they sent us a .jpg not a .png, so the color information was lost.
+//So I grabbed the color from the current website instead ^^
+
+.flex-container {
+    display:flex;
+    //margin:0 9%;                    //Smaller screen sizes...
+    margin:0 9%;
+    justify-content: space-between;
+}
+header.flex-container {
+    height:50px;
+}
+footer .flex-container {
+    section { 
+        @include flex-basis-fixed-gutters (3, 40px);
+    }
+}
+
+.logo {
+    flex-basis:25%;
+    text-align: left;
+    width:fit-content;
+    img {
+        display:inline-block;
+        height:50px;
+        object-fit: contain;
+    }
+}
+
+.nav-header {
+    flex-basis:75%;
+    padding:15px 0;
+    display:flex;
+    justify-content:space-between;
+    > a {
+        @include flex-basis-fixed-gutters (5, 20px);
+        height:fit-content;
+    }
+    .quick-call {
+        color:white;
+        background-color: $fetching-shade-of-purple;
+        border-radius: 4px;
+    }
+}
+
+//@media (max-width:720px) {    //This is where it starts blurping with my layout
+
+//}
+
+.copyright {
+    background-color: $fetching-shade-of-purple;
+    color: white;
+}

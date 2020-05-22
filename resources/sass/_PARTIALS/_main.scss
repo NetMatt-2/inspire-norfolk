@@ -1,0 +1,27 @@
+@import "_PARTIALS/colours";
+
+//IN this, the _header_footer, and _banner.scss, I've used a general margin/padding of 9% to all of the body text. That looks right according to the template.
+
+main :nth-child(2n+1) {
+    background-color: $fetching-shade-of-purple;
+}
+main :nth-child(1n+2) {
+    width:100%;
+    padding:9%;
+}
+
+.about h2, .text-container h2{
+    color: $fetching-shade-of-purple;
+}
+.about p, .text-container p{
+    color: black;
+}
+
+.about {
+    text-align: center;
+}
+
+.our-services {
+    color:white;
+    //.flex-container {}
+}

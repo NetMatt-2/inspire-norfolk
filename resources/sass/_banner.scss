@@ -1,0 +1,55 @@
+@import "_PARTIALS/colours",
+        "_PARTIALS/breakpoints";
+
+.splash-banner {
+    background-image:url("../IMGs/gratisography-398H.jpg");
+    background-origin: initial;
+    background-position: 50% 50%;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.text-block {
+    margin: 0px;
+    width:100%;
+    padding:7.5% 50% 7.5% 9%;
+    box-sizing:border-box;
+    text-align:left;
+    font-size:20px;
+    h2, h3, h4, p, a {
+        color: white;
+        //padding-right:33%;
+    }
+    background-image:url("../IMGs/banner-overlay.svg");
+    background-origin: content-box;
+    background-position: right 50%;                     //<== This is the lynchpin of the alignment.
+    background-repeat: no-repeat;
+/*Okay, so we set the width to 100% and pad the container on the right-hand side
+This pushes the overlay in, but we want extra padding on the text.
+BUT we don't want the text elements to have 50% padding because the effect will be cumulative;
+we want 33% on the text elements (but my brain's turned off so I don't know why).
+    Because it's padded by 25%, so 75% remains, so 33% of 75% is 25% which brings the total padding to 50%.
+*/
+
+    h2, h3, h4 {
+        text-transform: uppercase;
+    }
+    h2 {
+        margin-top: 0;
+    }
+    a {
+        border: 1.5px solid white;
+        border-radius: 6px;
+        text-align: center;
+        padding: 10px 40px;             //Make the button-y bit a bit bigger.
+        margin-top: 0px;
+        display:inline-block;           //Get the top margin to appear and space things out (<a> doesn't do that by default).
+    }
+}
+
+/*@media (min-width:$bp-sm) {
+    .text-block {
+        width:50%;
+        padding-right:0%; 
+    }
+}*/
