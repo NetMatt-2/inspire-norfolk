@@ -1,4 +1,4 @@
-<Footer>
+<footer>
     <div class=flex-container>
         <section class=contact-details>
             <h4>Contact Us</h4>
@@ -39,4 +39,4 @@
     <section class=copyright>
         <p>Copyright &copy; Inspire Norfolk. Web Design Netmatters. All Rights Reserved 2018.</p>
     </section>
-</Footer>
+</footer>

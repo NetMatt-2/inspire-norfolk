@@ -3,11 +3,6 @@
 
 //IN this, the _header_footer, and _banner.scss, I've used a general margin/padding of 9% to all of the body text. That looks right according to the template.
 
-main section {
-    //I'm not sure how to make the bg stretch across the page with out just making the width 100% so here goes:
-    width:100%;
-    padding: 0 9%;
-}
 
 //ABOUT
 .about {
@@ -20,11 +15,17 @@ main section {
     color: black;
 }
 
+.about, .our-services {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
 
 .our-services, .get-in-touch {
     background-color: $fetching-shade-of-purple;
     color:white;
 }
+
+
 
 //OUR SERVICES
 .our-services .flex-container {
@@ -41,6 +42,7 @@ main section {
 }
 .icon {
     position: absolute;
+    color: black;       //<== alt text;
     top:50%;
     left:50%;
     border-radius: 50%;

@@ -3,6 +3,7 @@
 
 
 @section('content')
+
 @include('layouts.header')
 <Main>
     <!--Splash banner-->
@@ -32,7 +33,7 @@
     <!--Our Services section-->
     <section class=our-services>
         <h2>Our Services</h2>
-        <p>At Inspire Norfolk we have numerous different types of apprentice opportunities, meaning we can guarantee you get the apprenticeship qualifications you want in the right industry. Find out further details below.<p>
+        <p>At Inspire Norfolk we have numerous different types of apprentice opportunities, meaning we can guarantee you get the apprenticeship qualifications you want in the right industry. Find out further details below.</p>
         <hr>
         <div class=flex-container>
             <!--Apprenticeship Recruitment card-->
@@ -76,5 +77,7 @@
     </section>
 
 </Main>
+@include ('layouts.footer')
 
 @endsection
+

@@ -6,13 +6,13 @@
 
 .flex-container {
     display:flex;
-    //margin:0 9%;                    //Smaller screen sizes...
-    margin:0 9%;
     justify-content: space-between;
 }
-header.flex-container {
+
+header .flex-container {
     height:50px;
 }
+
 footer .flex-container {
     section { 
         @include flex-basis-fixed-gutters (3, 40px);
@@ -51,6 +51,7 @@ footer .flex-container {
 //}
 
 .copyright {
+    text-align: center;
     background-color: $fetching-shade-of-purple;
     color: white;
 }

@@ -11,3 +11,8 @@
 @import "header_footer", 
         "body-main",
         "banner";
+
+        header, footer .flex-container, main section {
+                width:100%;
+                padding: 0 9%;
+        }
