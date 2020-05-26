@@ -34,7 +34,7 @@
     text-transform: uppercase;
 }
 .card {
-    @include flex-basis-fixed-gutters (3, $v-pad_little);
+    @include flex-basis-fixed-gutters (3, $gutter-padding);
     text-align:center;
     .text-container {
         padding-top: $v-pad_lots;
@@ -69,13 +69,14 @@
         flex-basis: 66%;
     }
     a {
-        flex-basis: calc(33% - #{$v-pad_little});
+        flex-basis: calc(33% - #{$gutter-padding});
         background-color: white;
-        color: $fetching-shade-of-purple;
         border-radius: 8px;
         text-align: center;
+        padding: 50%, 0;
+        color: $fetching-shade-of-purple;
         font-size: larger;
-        font-weight: 400;
+        font-weight: 700;
     }
     // ^^^ This section went through an unreasonable ammount of jank before I finally got it lined up properly.
 }
