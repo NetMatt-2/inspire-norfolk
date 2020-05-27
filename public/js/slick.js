@@ -1,0 +1,1 @@
+$('.splash-banner').slick();
