@@ -1,5 +1,6 @@
 @import "_PARTIALS/colours",
-        "_PARTIALS/breakpoints";
+        "_PARTIALS/breakpoints",
+        "_PARTIALS/padding";
 
 .splash-banner {
     background-image:url("../IMGs/gratisography-398H.jpg");
@@ -13,7 +14,7 @@
 .text-block {
     margin: 0px;
     width:100%;
-    padding:7.5% 50% 7.5% 9%;
+    padding:7.5% 50% 7.5% $margin_outer;
     box-sizing:border-box;
     text-align:left;
     font-size:20px;

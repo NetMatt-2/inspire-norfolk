@@ -1,10 +1,13 @@
-<Footer>
+
+<footer>
     <div class="flex-container">
         <section class="contact-details">
             <h4>Contact Us</h4>
-            <p>Inspire Norfolk</p>
-            <p>info@inspirenorfolk.co.uk</p>
-            <p>01603 670909</p>
+            <ul>
+                <li>Inspire Norfolk</li>
+                <li>info@inspirenorfolk.co.uk</li>
+                <li>01603 670909</li>
+            </ul>
         </section>
 
         <section class="nav-footer">
@@ -39,4 +42,4 @@
     <section class="copyright">
         <p>Copyright &copy; Inspire Norfolk. Web Design Netmatters. All Rights Reserved 2018.</p>
     </section>
-</Footer>
+</footer>

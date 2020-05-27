@@ -1,15 +1,13 @@
 @extends('layouts.app')
 
-
-
 @section('content')
+
 @include('layouts.header')
 <Main>
     <!--Splash banner-->
-    <h2>Single Item</h2>
-    <div class="slider splash-banner">
-        <div>
-            <h3><div class="text-block">
+
+    <div class="splash-banner">
+        <div class="text-block">
             <h2>Inspire Norfolk</h2>
             <h3>Apprenticeships in Norfolk</h3>
             <hr>
@@ -52,38 +50,40 @@
 
     <!--Our Services section-->
     <section class="our-services">
-        <h2>Our Services</h2>
-        <p>At Inspire Norfolk we have numerous different types of apprentice opportunities, meaning we can guarantee you get the apprenticeship qualifications you want in the right industry. Find out further details below.<p>
-                <hr>
-                <div class="flex-container">
-                    <!--Apprenticeship Recruitment card-->
-                    <div class="card">
-                        <img src=# class="card-banner" alt="People doing stuff">
-                        <div class="text-container">
-                            <h2>Apprenticeship Recruitment</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-                        </div>
-                        <img src=# class="icon" alt="Shaking hands icon">
-                    </div>
-                    <!--International Work Placements card-->
-                    <div class=card>
-                        <img src=# class="card-banner" alt="Man with globe">
-                        <div class="text-container">
-                            <h2>International Work Placements</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-                        </div>
-                        <img src=# class="icon" alt="Globe icon">
-                    </div>
-                    <!--Bespoke Apprenticeship Support-->
-                    <div class="card">
-                        <img src=# class="card-banner" alt="People shaking hands">
-                        <div class="text-container">
-                            <h2>Bespoke Apprenticeship Support</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-                        </div>
-                        <img src=# class="icon" alt="People icon">
-                    </div>
+        <div class="header-text">
+            <h2>Our Services</h2>
+            <p>At Inspire Norfolk we have numerous different types of apprentice opportunities, meaning we can guarantee you get the apprenticeship qualifications you want in the right industry. Find out further details below.</p>
+        </div>
+        <hr>
+        <div class="flex-container">
+            <!--Apprenticeship Recruitment card-->
+            <div class="card">
+                <img src="images\card placeholders/gratisography-346H.jpg" class=card-banner alt="People doing stuff">
+                <div class="text-container">
+                    <h2>Apprenticeship Recruitment</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                    <img src="https://img.icons8.com/ios/100/000000/handshake.png" class=icon alt="Shaking hands icon">
                 </div>
+            </div>
+            <!--International Work Placements card-->
+            <div class="card">
+                <img src="images\card placeholders/not-such-a-long-name.jpg" class=card-banner alt="Man with globe">
+                <div class="text-container">
+                    <h2>International Work Placements</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                    <img src="https://img.icons8.com/android/96/000000/globe.png" class=icon alt="Globe icon">
+                </div>
+            </div>
+            <!--Bespoke Apprenticeship Support-->
+            <div class="card">
+                <img src="images\card placeholders/gratisography-188H.jpg" class=card-banner alt="People shaking hands">
+                <div class="text-container">
+                    <h2>Bespoke Apprenticeship Support</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                    <img src="https://img.icons8.com/ios-glyphs/90/000000/group.png" class=icon alt="People icon">
+                </div>
+            </div>
+        </div> 
     </section>
 
     <section class="about">
@@ -92,10 +92,17 @@
     </section>
 
     <section class="get-in-touch">
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<p>
-                <a href=#>Get In Touch</a>
+
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+        <a href=#>
+            <p>Get In Touch</p>
+        </a>
     </section>
 
 </Main>
+@include ('layouts.footer')
+
 
 @endsection
+
+

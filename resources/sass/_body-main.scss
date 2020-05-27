@@ -1,49 +1,102 @@
 @import "_PARTIALS/colours",
-        "_PARTIALS/mix_flex-basis-fixed-gutters";
+        "_PARTIALS/mix_flex-basis-fixed-gutters",
+        "_PARTIALS/padding";
 
-//IN this, the _header_footer, and _banner.scss, I've used a general margin/padding of 9% to all of the body text. That looks right according to the template.
+//GENERAL
 
-main section {
-    //I'm not sure how to make the bg stretch across the page with out just making the width 100% so here goes:
+/*main section {
     width:100%;
-    padding: 0 9%;
-}
+    padding: 0 $margin_outer;
+}*/
 
 //ABOUT
 .about {
     text-align: center;
 }
 .about h2, .text-container h2{
-    color: $fetching-shade-of-purple;
+    color: $fso-purple;
 }
 .about p, .text-container p{
     color: black;
 }
 
-
+.about, .our-services {
+    padding-top: $v-pad_lots;
+    padding-bottom: $v-pad_lots;
+}
 .our-services, .get-in-touch {
-    background-color: $fetching-shade-of-purple;
+    background-color: $fso-purple;
     color:white;
 }
 
 //OUR SERVICES
-.our-services .flex-container {
-    .card {
-        @include flex-basis-fixed-gutters (3, 20px);
+.our-services hr {
+    color:white;
+}
+.header-text {
+    display: flex;
+    flex-wrap: wrap;
+    h2 {
+        flex-basis: 25%;
+        text-transform: uppercase;
+    }
+    p {
+        flex-basis: 75%;
+    }
+}
+
+.card {
+    @include flex-basis-fixed-gutters (3, $gutter-padding);
+    text-align:center;
+    .text-container {
+        padding-top: $v-pad_lots;
+        padding-bottom: $v-pad_some;
+        position: relative;
     }
 }
 .card-banner {
     height:200px;
     object-fit: cover;
 }
-.card {
-    text-align:center;
-}
 .icon {
     position: absolute;
-    top:50%;
+    top:0%;
     left:50%;
+    transform:translate(-50%,-50%);       //<== Req'd to effectively set the image origin to center; translate moves the image by a distance relative to its width/height.
+    background-color: $fso-purple;
+    fill: white;
+    color: black;                       //<== alt text;
     border-radius: 50%;
     width: 50px;
     height: 50px;
+}
+
+//GET IN TOUCH
+.get-in-touch {
+    display:flex;
+    justify-content: space-between;
+    padding-top: $v-pad_some;
+    padding-bottom: $v-pad_some;
+    p {
+        flex-basis: 66%;
+    }
+    a {
+        flex-basis: calc(33% - #{$gutter-padding});
+        background-color: white;
+        border-radius: 8px;
+        text-align: center;
+        color: $fso-purple;
+        font-size: larger;
+        font-weight: 700;
+        position: relative;
+        p {
+            margin: 0;
+            padding: 0;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    // ^^^ This section went through an unreasonable ammount of jank before I finally got it lined up properly.
 }

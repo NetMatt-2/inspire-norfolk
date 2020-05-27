@@ -1,22 +1,17 @@
 @import "_PARTIALS/colours",
-        "_PARTIALS/mix_flex-basis-fixed-gutters";
-  
+        "_PARTIALS/mix_flex-basis-fixed-gutters",
+        "_PARTIALS/padding";
+        
 //I cheated. Of course, I would've sampled the color from the template, but they sent us a .jpg not a .png, so the color information was lost.
 //So I grabbed the color from the current website instead ^^
 
 .flex-container {
     display:flex;
-    //margin:0 9%;                    //Smaller screen sizes...
-    margin:0 9%;
     justify-content: space-between;
 }
-header.flex-container {
+
+header .flex-container {
     height:50px;
-}
-footer .flex-container {
-    section { 
-        @include flex-basis-fixed-gutters (3, 40px);
-    }
 }
 
 .logo {
@@ -41,16 +36,34 @@ footer .flex-container {
     }
     .quick-call {
         color:white;
-        background-color: $fetching-shade-of-purple;
+        background-color: $fso-purple;
         border-radius: 4px;
     }
 }
 
-//@media (max-width:720px) {    //This is where it starts blurping with my layout
+footer {
+    padding-top: $v-pad_some;
+    section { 
+        @include flex-basis-fixed-gutters (3, 40px);
+    }
+}
 
-//}
+.contact-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-footer ul {
+    padding: 0 20px;
+    list-style-image: url("#");
+}
 
 .copyright {
-    background-color: $fetching-shade-of-purple;
+    margin-top: $v-pad_some;
+    text-align: center;
+    background-color: $fso-purple;
     color: white;
+    p {
+        margin-bottom: 0;
+    }
 }

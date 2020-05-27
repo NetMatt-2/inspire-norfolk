@@ -1,0 +1,17 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Styles
+@import "header_footer",
+        "other";
+        // Universal styling
+        header, footer .flex-container, main section {
+                width:100%;
+                padding: 0 9%;
+        }

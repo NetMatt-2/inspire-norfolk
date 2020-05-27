@@ -1,0 +1,32 @@
+@import 
+    "_PARTIALS/breakpoints",
+    "_PARTIALS/colours";
+
+h1 {
+    background-color: $fso-purple;
+    color: white;
+}
+
+h3 {
+    color: grey;
+}
+
+p {
+    color: black;
+}
+
+.testimonial {
+    display:flex;
+    flex-wrap:wrap;
+    img {
+        @media (min-width: $bp-md) {
+            order: 2;
+        }
+    }
+}
+
+.quote {
+    ::before, ::after {
+        content: "\0022";   //Double quotes
+    }
+}

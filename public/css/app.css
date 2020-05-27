@@ -10935,16 +10935,11 @@ a.text-dark:focus {
 
 .flex-container {
   display: flex;
-  margin: 0 9%;
   justify-content: space-between;
 }
 
-header.flex-container {
+header .flex-container {
   height: 50px;
-}
-
-footer .flex-container section {
-  flex-basis: calc( (100% - (40px * ( 3 - 1 )) ) / 3 );
 }
 
 .logo {
@@ -10982,15 +10977,39 @@ footer .flex-container section {
   border-radius: 4px;
 }
 
+footer {
+  padding-top: 40px;
+}
+
+footer section {
+  flex-basis: calc( (100% - (40px * ( 3 - 1 )) ) / 3 );
+}
+
+.contact-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-footer ul {
+  padding: 0 20px;
+  list-style-image: url("#");
+}
+
 .copyright {
+  margin-top: 40px;
+  text-align: center;
   background-color: #584096;
   color: white;
 }
 
-main section {
-  width: 100%;
-  padding: 0 9%;
+.copyright p {
+  margin-bottom: 0;
 }
+
+/*main section {
+    width:100%;
+    padding: 0 $margin_outer;
+}*/
 
 .about {
   text-align: center;
@@ -11006,14 +11025,45 @@ main section {
   color: black;
 }
 
+.about,
+.our-services {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
 .our-services,
 .get-in-touch {
   background-color: #584096;
   color: white;
 }
 
-.our-services .flex-container .card {
+.our-services hr {
+  color: white;
+}
+
+.header-text {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-text h2 {
+  flex-basis: 25%;
+  text-transform: uppercase;
+}
+
+.header-text p {
+  flex-basis: 75%;
+}
+
+.card {
   flex-basis: calc( (100% - (20px * ( 3 - 1 )) ) / 3 );
+  text-align: center;
+}
+
+.card .text-container {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  position: relative;
 }
 
 .card-banner {
@@ -11022,17 +11072,48 @@ main section {
      object-fit: cover;
 }
 
-.card {
-  text-align: center;
-}
-
 .icon {
   position: absolute;
-  top: 50%;
+  top: 0%;
   left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #584096;
+  fill: white;
+  color: black;
   border-radius: 50%;
   width: 50px;
   height: 50px;
+}
+
+.get-in-touch {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.get-in-touch p {
+  flex-basis: 66%;
+}
+
+.get-in-touch a {
+  flex-basis: calc(33% - 20px);
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+  color: #584096;
+  font-size: larger;
+  font-weight: 700;
+  position: relative;
+}
+
+.get-in-touch a p {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .splash-banner {
@@ -11096,4 +11177,11 @@ main section {
         padding-right:0%; 
     }
 }*/
+
+header,
+footer .flex-container,
+main section {
+  width: 100%;
+  padding: 0 9%;
+}
 
