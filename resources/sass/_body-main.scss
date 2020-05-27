@@ -30,9 +30,21 @@
 }
 
 //OUR SERVICES
-.our-services h2 {
-    text-transform: uppercase;
+.our-services hr {
+    color:white;
 }
+.header-text {
+    display: flex;
+    flex-wrap: wrap;
+    h2 {
+        flex-basis: 25%;
+        text-transform: uppercase;
+    }
+    p {
+        flex-basis: 75%;
+    }
+}
+
 .card {
     @include flex-basis-fixed-gutters (3, $gutter-padding);
     text-align:center;
@@ -52,7 +64,7 @@
     left:50%;
     transform:translate(-50%,-50%);       //<== Req'd to effectively set the image origin to center; translate moves the image by a distance relative to its width/height.
     background-color: $fetching-shade-of-purple;
-    fill: $white;
+    fill: white;
     color: black;                       //<== alt text;
     border-radius: 50%;
     width: 50px;
@@ -73,10 +85,18 @@
         background-color: white;
         border-radius: 8px;
         text-align: center;
-        padding: 50%, 0;
         color: $fetching-shade-of-purple;
         font-size: larger;
         font-weight: 700;
+        position: relative;
+        p {
+            margin: 0;
+            padding: 0;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+        }
     }
     // ^^^ This section went through an unreasonable ammount of jank before I finally got it lined up properly.
 }

@@ -48,10 +48,22 @@ footer {
     }
 }
 
+.contact-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-footer ul {
+    padding: 0 20px;
+    list-style-image: url("#");
+}
+
 .copyright {
     margin-top: $v-pad_some;
-    margin-bottom: 0;
     text-align: center;
     background-color: $fetching-shade-of-purple;
     color: white;
+    p {
+        margin-bottom: 0;
+    }
 }
