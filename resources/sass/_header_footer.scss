@@ -36,7 +36,7 @@ header .flex-container {
     }
     .quick-call {
         color:white;
-        background-color: $fetching-shade-of-purple;
+        background-color: $fso-purple;
         border-radius: 4px;
     }
 }
@@ -61,7 +61,7 @@ footer {
 .copyright {
     margin-top: $v-pad_some;
     text-align: center;
-    background-color: $fetching-shade-of-purple;
+    background-color: $fso-purple;
     color: white;
     p {
         margin-bottom: 0;
