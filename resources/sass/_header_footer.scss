@@ -51,11 +51,15 @@ footer {
 .contact-details ul {
     list-style: none;
     padding: 0;
+    >li:nth-child(1) {
+        font-weight: bold;
+    }
 }
 
 .nav-footer ul {
     padding: 0 20px;
-    list-style-image: url("#");
+    list-style-image: url("https://img.icons8.com/android/24/000000/chevron-right.png");
+    //Placeholder ^^^
 }
 
 .copyright {

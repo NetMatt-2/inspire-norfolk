@@ -83,6 +83,7 @@
             color:white;
             font-size: 12pt;
             border:none;
+            box-shadow:0 0 5px 2px black, 2px 2px 5px 2px black;
         }
         .btn-submit-form:active {
             @include active-button();
