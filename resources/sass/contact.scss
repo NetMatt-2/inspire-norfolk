@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+@import "header_footer",
+        "_PARTIALS/breakpoints",
+        "_PARTIALS/colours",
+        "_PARTIALS/universals",
+        "_PARTIALS/mix_active-button";
+
+        main {
+            background-color: $fso-purple;
+            padding: 20px 9%;
+        }
+        h2 {
+            color: white;
+        }
+
+        form {
+            margin-bottom: 20px;
+            padding: 20px 5%;
+            h2 {
+                color: black;
+            }
+        }
+
+        form, .map {
+            background-color: $off-white;
+            border-radius: 10px;
+            border: double black 6px;
+        }
+
+        .form-group {
+            label {
+                display: block;
+            }
+            input, textarea {
+                width: 100%;
+            }
+            textarea {
+                resize: vertical;
+            }
+        }
+        .name, .email {
+            margin-bottom: 10px;
+        }
+        .phone, .message {
+            margin-bottom: 20px;
+        }
+
+        .checkbox {
+            display: inline;
+            position: relative;
+            input, .checkmark {
+                position: absolute;
+            }
+            input {
+                cursor: pointer;
+            }
+            + p {
+                padding-left: 25px;
+            }
+        }
+
+        .recaptcha {
+            margin: 0;
+            $secur-wdth: 304px;         //Using the exact width of the recap as defined by the widget itself.
+            $secur-pad: calc(50% - calc(#{$secur-wdth} / 2));
+            width: $secur-wdth;
+            padding: 0 $secur-pad;
+            text-align: left;
+            @media (min-width:$bp-sm) {
+                text-align: center;
+            }
+        }
+
+        .ctnr-btn {
+            text-align:right;
+        }
+        .btn-submit-form {
+            background-color: $fso-purple;
+            width:190px;
+            height:70px;
+            border-radius: 10px;
+            color:white;
+            font-size: 12pt;
+            border:none;
+        }
+        .btn-submit-form:active {
+            @include active-button();
+        }
+
+        .map { 
+            height: 260px;
+        }
+        .map-label {
+            margin: 10px 0;
+            color: white;
+        }
+        
