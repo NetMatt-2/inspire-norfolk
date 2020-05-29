@@ -5,7 +5,7 @@
 @include ('layouts.header')
 
 <main>
-        <h1 class=tes-h1>Testimonials</h1>
+        <h1>Testimonials</h1>
 
         <section class=testimonial id="Joe Bloggs">
             <div class=vid-ctnr>

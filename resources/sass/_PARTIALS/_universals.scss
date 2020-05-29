@@ -2,6 +2,13 @@ body {
     margin: 0;
 }
 
+h1 {
+    background-color: $fso-purple;
+    color: white;
+    padding: $v-pad_some $margin_outer;
+    margin: 0;
+}
+
 header, footer .flex-container, main section {
     width:100%;
     padding: 0 9%;

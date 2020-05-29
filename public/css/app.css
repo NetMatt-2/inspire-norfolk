@@ -11010,6 +11010,67 @@ footer section {
   color: white;
 }
 
+.splash-banner {
+  background-image: url(/images/gratisography-398H.jpg?b8e7ec3ac7d1b8f5afb40144ecbd732a);
+  background-origin: initial;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-block {
+  margin: 0px;
+  width: 100%;
+  padding: 7.5% 50% 7.5% 9%;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 20px;
+  background-image: url(/images/banner-overlay.svg?4b1b530dcb1c58bb362e0449836b1eb4);
+  background-origin: content-box;
+  background-position: right 50%;
+  background-repeat: no-repeat;
+  /*Okay, so we set the width to 100% and pad the container on the right-hand side
+  This pushes the overlay in, but we want extra padding on the text.
+  BUT we don't want the text elements to have 50% padding because the effect will be cumulative;
+  we want 33% on the text elements (but my brain's turned off so I don't know why).
+      Because it's padded by 25%, so 75% remains, so 33% of 75% is 25% which brings the total padding to 50%.
+  */
+}
+
+.text-block h2,
+.text-block h3,
+.text-block h4,
+.text-block p,
+.text-block a {
+  color: white;
+}
+
+.text-block h2,
+.text-block h3,
+.text-block h4 {
+  text-transform: uppercase;
+}
+
+.text-block h2 {
+  margin-top: 0;
+}
+
+.text-block a {
+  border: 1.5px solid white;
+  border-radius: 6px;
+  text-align: center;
+  padding: 10px 40px;
+  margin-top: 0px;
+  display: inline-block;
+}
+
+/*@media (min-width:$bp-sm) {
+    .text-block {
+        width:50%;
+        padding-right:0%; 
+    }
+}*/
+
 .about {
   text-align: center;
 }
@@ -11115,67 +11176,6 @@ footer section {
   transform: translate(-50%, -50%);
 }
 
-.splash-banner {
-  background-image: url(/images/gratisography-398H.jpg?b8e7ec3ac7d1b8f5afb40144ecbd732a);
-  background-origin: initial;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.text-block {
-  margin: 0px;
-  width: 100%;
-  padding: 7.5% 50% 7.5% 9%;
-  box-sizing: border-box;
-  text-align: left;
-  font-size: 20px;
-  background-image: url(/images/banner-overlay.svg?4b1b530dcb1c58bb362e0449836b1eb4);
-  background-origin: content-box;
-  background-position: right 50%;
-  background-repeat: no-repeat;
-  /*Okay, so we set the width to 100% and pad the container on the right-hand side
-  This pushes the overlay in, but we want extra padding on the text.
-  BUT we don't want the text elements to have 50% padding because the effect will be cumulative;
-  we want 33% on the text elements (but my brain's turned off so I don't know why).
-      Because it's padded by 25%, so 75% remains, so 33% of 75% is 25% which brings the total padding to 50%.
-  */
-}
-
-.text-block h2,
-.text-block h3,
-.text-block h4,
-.text-block p,
-.text-block a {
-  color: white;
-}
-
-.text-block h2,
-.text-block h3,
-.text-block h4 {
-  text-transform: uppercase;
-}
-
-.text-block h2 {
-  margin-top: 0;
-}
-
-.text-block a {
-  border: 1.5px solid white;
-  border-radius: 6px;
-  text-align: center;
-  padding: 10px 40px;
-  margin-top: 0px;
-  display: inline-block;
-}
-
-/*@media (min-width:$bp-sm) {
-    .text-block {
-        width:50%;
-        padding-right:0%; 
-    }
-}*/
-
 .flex-container {
   display: flex;
   justify-content: space-between;
@@ -11257,6 +11257,13 @@ body {
   margin: 0;
 }
 
+h1 {
+  background-color: #584096;
+  color: white;
+  padding: 40px 9%;
+  margin: 0;
+}
+
 header,
 footer .flex-container,
 main section {
@@ -11264,11 +11271,111 @@ main section {
   padding: 0 9%;
 }
 
-.tes-h1 {
+.con-main {
   background-color: #584096;
-  color: white;
-  padding: 40px 9%;
+  padding: 20px 9%;
+}
+
+.con-h2 {
+  color: black;
+}
+
+form {
+  margin-bottom: 20px;
+  padding: 20px 5%;
+}
+
+form h2 {
+  color: black;
+}
+
+form,
+.map {
+  background-color: #f8fafc;
+  border-radius: 10px;
+  border: double black 6px;
+}
+
+.form-group label {
+  display: block;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.name,
+.email {
+  margin-bottom: 10px;
+}
+
+.phone,
+.message {
+  margin-bottom: 20px;
+}
+
+.checkbox {
+  display: inline;
+  position: relative;
+}
+
+.checkbox input,
+.checkbox .checkmark {
+  position: absolute;
+}
+
+.checkbox input {
+  cursor: pointer;
+}
+
+.checkbox + p {
+  padding-left: 25px;
+}
+
+.recaptcha {
   margin: 0;
+  width: 304px;
+  padding: 0 calc(50% - calc(304px / 2));
+  text-align: left;
+}
+
+@media (min-width: 800px) {
+  .recaptcha {
+    text-align: center;
+  }
+}
+
+.ctnr-btn {
+  text-align: right;
+}
+
+.btn-submit-form {
+  background-color: #584096;
+  width: 190px;
+  height: 70px;
+  border-radius: 10px;
+  color: white;
+  font-size: 12pt;
+  border: none;
+  box-shadow: 0 0 5px 2px black, 2px 2px 5px 2px black;
+}
+
+.btn-submit-form:active {
+  box-shadow: 0 0 5px 1px black inset, 2px 2px 5px 1px black inset;
+}
+
+.map {
+  height: 260px;
+}
+
+.map-label {
+  margin: 10px 0;
+  color: white;
 }
 
 .testimonial {
@@ -11385,6 +11492,13 @@ main section {
 }
 
 body {
+  margin: 0;
+}
+
+h1 {
+  background-color: #584096;
+  color: white;
+  padding: 40px 9%;
   margin: 0;
 }
 

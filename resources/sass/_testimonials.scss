@@ -1,21 +1,7 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
-
 @import
-    "header_footer",
-    "_PARTIALS/universals",
-    "_PARTIALS/breakpoints",
-    "_PARTIALS/colours",
-    "_PARTIALS/padding",
     "_PARTIALS/mix_clearfix",
     "_PARTIALS/mix_iframe-vid-fixed-ratio";
 
-.tes-h1 {
-    background-color: $fso-purple;
-    color: white;
-    padding: $v-pad_some $margin_outer;
-    margin: 0;
-}
 
 .testimonial {
     padding-top: $v-pad_some;
