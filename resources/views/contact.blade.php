@@ -42,9 +42,9 @@
 
 @include ('layouts.header')
 
-    <Main>
+    <Main class=con-main>
         <form id="contact-form" action="{{ route('contact-form-submit') }}">
-            <h2>Contact us today</h2> 
+            <h2 class=con-h2>Contact us today</h2> 
 
             <div class="form-group name">
                 <label for="name">Your name:</label>

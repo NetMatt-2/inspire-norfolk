@@ -1,4 +1,4 @@
-@extends('layouts.other-pages')
+@extends('layouts.app')
 
 @include ('layouts.header')
 
