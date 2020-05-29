@@ -1,0 +1,105 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+@import
+    "header_footer",
+    "_PARTIALS/universals",
+    "_PARTIALS/breakpoints",
+    "_PARTIALS/colours",
+    "_PARTIALS/padding",
+    "_PARTIALS/mix_clearfix",
+    "_PARTIALS/mix_iframe-vid-fixed-ratio";
+
+.tes-h1 {
+    background-color: $fso-purple;
+    color: white;
+    padding: $v-pad_some $margin_outer;
+    margin: 0;
+}
+
+.testimonial {
+    padding-top: $v-pad_some;
+    padding-bottom: $v-pad_lots;
+    h3 {
+        margin-top: 0;
+        color: grey;
+    }
+    p {
+        color: black;
+    }
+    @include clearfix;
+}
+.testimonial:nth-child(2n+1) {
+    background-color: $fso-purple;
+    p, .vid-placeholder {
+        color: white;
+    }
+    h3 {
+        color: lightgrey;
+    }
+    .img-ctnr {
+        float: left;
+        margin-left: 0;
+        margin-right: $gutter-padding;
+    }
+    .testimonial-text h3 {
+        @media (min-width: $bp-sm) {
+            text-align: right;
+        }
+    }
+}
+
+//.testimonial {}
+//{
+    .vid-ctnr{
+        width:100%;
+        @include iframe-vid-fixed-ratio ();
+        margin-bottom: $v-pad_little;
+    }
+    //{
+        .vid-placeholder {
+            $h:$v-pad_some;
+            height:$h;
+            line-height:$h;
+            border: 2px inset lightgrey;
+            text-align: center;
+        }
+    //}
+    .img-ctnr {
+        float: right;
+        width: 25%;
+        margin-left: $gutter-padding;
+        object-fit: contain;
+        text-align: center;
+        @media (max-width: $bp-sm) {
+            display:none;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            margin: auto 0;
+        }
+    }
+
+    .testimonial-text {
+        h3 {
+            text-align: center;
+            @media (min-width: $bp-sm) {
+                text-align: left;
+            }
+        }
+    }
+    //{
+        .quote {
+            font-size: 300%;
+            text-align: center;
+            ::before, ::after {
+                content: "\0022";   //Double quotes
+            }
+            p { 
+                margin-bottom: 0;
+            }
+        }
+    //}
+//}
+

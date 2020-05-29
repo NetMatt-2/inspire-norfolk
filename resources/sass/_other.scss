@@ -1,5 +1,5 @@
 @import
-    "_PAGE PARTIALS/header_footer",
+    "header_footer",
     "_PARTIALS/breakpoints",
     "_PARTIALS/colours";
 
@@ -20,31 +20,4 @@ h3 {
 
 p {
     color: black;
-}
-
-.testimonial {
-    display:flex;
-    flex-wrap:wrap;
-    .testimonial-text, img {
-        flex-basis: 100%;
-    }
-    @media (min-width: $bp-md) {
-        .testimonial-text {
-            flex-basis: 75%;
-        }
-        img {
-            flex-basis: 25%;
-            order: 2;
-        }
-    }
-}
-
-.quote {
-    width:100%;
-    order: 3;
-    font-size: 300%;
-    text-align: center;
-    ::before, ::after {
-        content: "\0022";   //Double quotes
-    }
 }
