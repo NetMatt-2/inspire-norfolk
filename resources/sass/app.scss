@@ -9,16 +9,18 @@
         //I didn't even use bootstrap, or the 'variables' sheet created at inception.
 
 // Styles
+@import "_PARTIALS/breakpoints",
+        "_PARTIALS/colours",
+        "_PARTIALS/padding",
+        "_PARTIALS/universals";
+        //Basically the only styles that arent universally applied are the various @mixin partials.
+
 @import "header_footer",
         "banner",
         "home",
         "about",
         "contact",
         "our-services",
-        "testimonials",
+        "testimonials";
         //I don't know how to have different stylesheets in Laravel so they're all compiled here in app.scss.
-        "_PARTIALS/breakpoints",
-        "_PARTIALS/colours",
-        "_PARTIALS/padding",
-        "_PARTIALS/universals";
-        //Basically the only styles that arent universally applied are the various @mixin partials.
+

@@ -11,6 +11,11 @@ h1 {
 
 header, footer .flex-container, main section {
     width:100%;
-    padding: 0 9%;
+    padding: 0 $margin_outer;
     //box-sizing: border-box;   //???
+}
+
+.endbreak {
+    height: 60px;
+    background-color: $fso-purple;
 }

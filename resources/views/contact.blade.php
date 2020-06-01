@@ -1,5 +1,3 @@
-<!--
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Contact Form</title>
-
-    <link rel="stylesheet" href="../CSS/contact.css">
-
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
@@ -20,11 +15,7 @@
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
     integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
     crossorigin=""></script>
-
-
 </head>
-
--->
 
 @extends ('layouts.app')
 

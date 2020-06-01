@@ -2,9 +2,6 @@
         "_PARTIALS/mix_flex-basis-fixed-gutters",
         "_PARTIALS/padding";
         
-//I cheated. Of course, I would've sampled the color from the template, but they sent us a .jpg not a .png, so the color information was lost.
-//So I grabbed the color from the current website instead ^^
-
 .flex-container {
     display:flex;
     justify-content: space-between;
@@ -33,6 +30,7 @@ header .flex-container {
     > a {
         @include flex-basis-fixed-gutters (5, 20px);
         height:fit-content;
+        text-align: center;
     }
     .quick-call {
         color:white;
