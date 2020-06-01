@@ -10940,7 +10940,7 @@ body {
 h1 {
   background-color: #584096;
   color: white;
-  padding: 40px 9%;
+  padding: 20px 9%;
   margin: 0;
 }
 
@@ -10999,6 +10999,25 @@ header .flex-container {
   color: white;
   background-color: #584096;
   border-radius: 4px;
+  height: 40px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.nav-header .quick-call p {
+  flex-grow: 1;
+  margin: 0;
+  width: 72px;
+  text-align: center;
+}
+
+.nav-header .quick-call img {
+  flex-basis: 24px;
+  height: 100%;
+  padding: 6px;
+  border-radius: 50%;
+  background-color: white;
 }
 
 footer {
@@ -11259,6 +11278,14 @@ footer section {
   transform: translate(-50%, -50%);
 }
 
+.page-about {
+  margin: 80px 0;
+}
+
+.page-about p {
+  margin-bottom: 40px;
+}
+
 .flex-container {
   display: flex;
   justify-content: space-between;
@@ -11302,6 +11329,25 @@ header .flex-container {
   color: white;
   background-color: #584096;
   border-radius: 4px;
+  height: 40px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.nav-header .quick-call p {
+  flex-grow: 1;
+  margin: 0;
+  width: 72px;
+  text-align: center;
+}
+
+.nav-header .quick-call img {
+  flex-basis: 24px;
+  height: 100%;
+  padding: 6px;
+  border-radius: 50%;
+  background-color: white;
 }
 
 footer {
@@ -11344,7 +11390,7 @@ body {
 h1 {
   background-color: #584096;
   color: white;
-  padding: 40px 9%;
+  padding: 20px 9%;
   margin: 0;
 }
 
@@ -11465,6 +11511,10 @@ form,
 .map-label {
   margin: 10px 0;
   color: white;
+}
+
+.page-services {
+  margin: 80px;
 }
 
 .testimonial {

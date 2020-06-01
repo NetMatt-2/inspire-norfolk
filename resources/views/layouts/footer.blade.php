@@ -12,10 +12,10 @@
         <section class="nav-footer">
             <h4>Sections</h4>
             <ul>
-                <li><a href=#>Our Services</a></li>
-                <li><a href=#>About Us</a></li>
-                <li><a href=#>Testimonials</a></li>
-                <li><a href=#>Terms & Conditions - Privacy Policy</a></li>
+                <li><a href="../services">Our Services</a></li>
+                <li><a href="../about">About Us</a></li>
+                <li><a href="../testimonials">Testimonials</a></li>
+                <li><a href="../contact">Terms & Conditions - Privacy Policy</a></li>
             </ul>
         </section>
 
@@ -23,15 +23,15 @@
             <h4>Follow Us On</h4>
             <table>
                 <tr>
-                    <td><img src=# alt="Facebook logo"></td>
+                    <td><img src="https://img.icons8.com/android/24/000000/facebook-new.png" alt="Facebook logo"></td>
                     <td>Facebook</td>
                 </tr>
                 <tr>
-                    <td><img src=# alt="Twitter logo"></td>
+                    <td><img src="https://img.icons8.com/android/24/000000/twitter.png" alt="Twitter logo"></td>
                     <td>Twitter</td>
                 </tr>
                 <tr>
-                    <td><img src=# alt="LinkedIn logo"></td>
+                    <td><img src="https://img.icons8.com/android/24/000000/linkedin.png" alt="LinkedIn logo"></td>
                     <td>LinkedIn</td>
                 </tr>
             </table>

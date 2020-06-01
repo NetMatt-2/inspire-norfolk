@@ -9,8 +9,16 @@
                 <a href="../testimonials">Testimonials</a>
                 <a href="../contact">Contact Us</a>
                 <a class="quick-call">
-                    <img src=# att="Telephone icon">
-                    01603 670909
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="https://img.icons8.com/metro/24/000000/phone.png" att="Telephone icon">
+                            </td>
+                            <td>
+                                01603 670909
+                            </td>
+                        </tr>
+                    </table>
                 </a>
             </div>
 
