@@ -101,8 +101,6 @@
 
 </Main>
 @include ('layouts.footer')
-
-
 @endsection
 
 
